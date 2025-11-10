@@ -3,6 +3,14 @@ import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+
+// svgs
+import laravelIcon from "../assets/techicons/catppuccin--laravel.svg";
+import htmlIcon from "../assets/techicons/catppuccin--html.svg";
+import cssIcon from "../assets/techicons/catppuccin--css.svg";
+import jsIcon from "../assets/techicons/catppuccin--javascript.svg";
+import phpIcon from "../assets/techicons/catppuccin--php.svg";
+import dockerIcon from "../assets/techicons/catppuccin--docker.svg";
 ---
 
 <!doctype html>
@@ -15,21 +23,25 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 		<main>
 			<h1>Juan Francisco Burgos</h1>
 			<h3>Software Developer</h3>
-			
+
 			<div class="tech-icons">
-				<img src="../../src/assets/techicons/catppuccin--laravel.svg" alt="Laravel" width="32" height="32" />
-				<img src="../../src/assets/techicons/catppuccin--html.svg" alt="HTML" width="32" height="32" />
-				<img src="../../src/assets/techicons/catppuccin--css.svg" alt="CSS" width="32" height="32" />
-				<img src="../../src/assets/techicons/catppuccin--javascript.svg" alt="JS" width="32" height="32" />
-				<img src="../../src/assets/techicons/catppuccin--php.svg" alt="PHP" width="32" height="32" />
-				<img src="../../src/assets/techicons/catppuccin--docker.svg" alt="Docker" width="32" height="32" />
+				<img
+					src={laravelIcon.src}
+					alt="Laravel"
+					width="32"
+					height="32"
+				/>
+				<img src={htmlIcon.src} alt="HTML" width="32" height="32" />
+				<img src={cssIcon.src} alt="CSS" width="32" height="32" />
+				<img src={jsIcon.src} alt="JS" width="32" height="32" />
+				<img src={phpIcon.src} alt="PHP" width="32" height="32" />
+				<img src={dockerIcon.src} alt="Docker" width="32" height="32" />
 			</div>
 			<p>
 				Hey there! Welcome to my blog. Here I share resources and
 				tutorials about <strong>PHP</strong>, <strong>Laravel</strong> and
 				<strong>web development</strong> in general.
 			</p>
-			
 		</main>
 		<Footer />
 	</body>
