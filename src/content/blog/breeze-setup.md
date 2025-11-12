@@ -1,6 +1,6 @@
 ---
 title: 'Laravel Breeze setup'
-description: 'Lorem ipsum dolor sit amet'
+description: 'Guide to setup breeze in Laravel'
 pubDate: 'Nov 10 2025'
 heroImage: '../../assets/placeholders/laravel-placeholder.png'
 ---
